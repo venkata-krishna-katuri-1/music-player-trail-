@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> login page</title>
+<style>
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(117, 243, 213);
+    font-weight: 200;
+
+
+}
+img.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+      }
+
+table{
+  width: 1200px;
+  
+}
+th{
+    text-align:left;
+    padding-left: 50px;
+}
+.logo>img{
+    height: 100px;
+    width: 100px;
+    border: 5px solid rgb(6, 4, 4);
+    border-radius: 50%;
+    
+}
+
+.logo>img:hover{
+    scale: 2;
+}
+.title1{
+    width: 1300px;
+    color: crimson;
+    background-image: url("https://thumbs.dreamstime.com/b/rainbow-love-heart-background-red-wood-60045149.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 1300px auto;
+    font-style: italic;
+    font-weight: 600;
+    border: 5px solid black;
+    border-radius: 30%;
+}
+
+.title1:hover{
+    background-image:url("https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg");
+    color: rgb(179, 73, 179);
+}
+
+.loginbox{
+    border: 5px solid rgb(26, 27, 37);
+    width: 300px;
+    height: 500px;
+    margin-left: 600px;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5a5d02d4b07869b960fa1da0/1516558077227-YFIILSIBQNQJB4RZMGUP/GIAM_Icon_AcademyOfMusic_RGB.png");
+    background-size: 300px 500px;
+    padding: 10px;
+    color: rgb(2, 126, 234);
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 20%;
+
+}
+
+#logo>img{
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-left: 70px;
+}
+
+label{
+    text-align: center;
+    font-size: 28px;
+    background-color: rgb(209, 244, 150);
+    color: rgba(60, 5, 198, 0.924);
+    font-weight: 400;
+}
+input[type=text], select, input
+{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid rgb(204, 37, 37);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+  height: 20px;
+  width: 250px;
+  border: 3px solid black;
+  border-radius: 15%;
+}
+.button{
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(164, 104, 228);
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 30px;
+}
+ul{
+    border: 5px solid black;
+    border-radius: 15%;
+    width: 700px;
+      list-style-type:none;
+       padding: 15px;
+        overflow: hidden;
+       background-image: url("https://thumbs.dreamstime.com/b/rainbow-love-heart-background-red-wood-60045149.jpg");
+        font-weight: 600;
+    }
+  li{
+      float:left
+     }
+            li a{
+                display:inline;
+                color: rgb(30, 2, 243);
+                text-align: center;
+                padding: 12px;
+                text-decoration: solid;
+
+            }
+
+            li a:hover{
+                background-color: rgb(200, 126, 229);
+                scale: 1.5;
+                color: rgb(255, 255, 255); 
+                font-weight: 600; 
+                border-radius: 30%;
+                   }
+</style>
+<script src="mainpage.js">	</script>
+<link rel="shortcut icon" href="images/music.png" type="image/x-icon"> 
+   </head>
+
+<body >
+    <table>
+        <th>
+            <td>
+            <div class="logo">
+                <img src="images/music.png" alt="music logo ">
+            </div>
+            </td>
+        </th>
+        <th>
+                
+                    <td style="text-align:center;">
+                    <h1 class="title1" > <marquee behavior="scroll" direction="right">❤❤  MAWA MUSIC ❤❤
+                    </marquee>
+                    </h1>
+                </td>                
+        </th>
+        <div class="list123">
+            <ul>
+                <li><a href="login1.html">HOME</a></li>               
+                <li><a href="https://music.youtube.com/">YOUTUBE </a></li>
+                <li><a href="https://naasongs.co/"> DOWNLOAD MUSIC (NAA SONGS) </a></li>
+                <li><a href="aboutus.html">ABOUT US </a></li>
+                <li><a href="tel:7386957811">CONTACT US</a></li>
+            </ul>
+        </div>
+         
+    </table> 
+    <img  class="background"
+    src="https://img.freepik.com/free-vector/musical-pentagram-sound-waves-notes-background_1017-33911.jpg?w=2000" alt="background image">
+<form action="mainpage.html" name="myForm" onsubmit="return(validate());">
+   
+<div class="loginbox">
+    <div id="logo">
+        <img src="images/music.png" alt="music logo " title="music logo">
+    </div>
+    <br><br>
+   <label> Username : </label><br>
+   <input type="text" size="15" name=" Name" id="t1" value="">
+
+</br>
+
+   <label title="password pattern:[A-Z] {3} [a-z] {4} [@_$#!*-] {1}"> Password: </label> <br>
+   <input type="Password" title="password pattern:[A-Z] {3} [a-z] {4} [@_$#!*-] {1}" name="" id="t2">
+
+</br>
+
+   <label> Retype Password: </label>
+   <input type="Password" name="" id="t3">
+
+</br>
+</br>
+<button class="button" type="submit" value="Submit" >Submit</button>  
+ <button class="button" type="reset" value="Reset">Reset</button>
+</div>
+</form>
+</body>
+</html>
